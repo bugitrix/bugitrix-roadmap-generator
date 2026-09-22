@@ -1,6 +1,5 @@
 import streamlit as st
 import json
-import os
 
 # ---------------------------------------------------------
 # PAGE CONFIG
@@ -41,10 +40,10 @@ def load_roadmap(path_key):
         return json.load(f)
 
 # ---------------------------------------------------------
-# DECIDE ROADMAP + RECOMMENDED SERVICE
+# DECIDE ROADMAP
 # ---------------------------------------------------------
 def decide_path(interest, level):
-    if interest == "Web Security" or interest == "Bug Bounty":
+    if interest in ["Web Security", "Bug Bounty"]:
         return "web"
     elif interest == "Networking":
         return "network"
@@ -53,25 +52,52 @@ def decide_path(interest, level):
     else:
         return "general"
 
+# ---------------------------------------------------------
+# RECOMMEND SERVICE
+# ---------------------------------------------------------
 def recommend_service(level, goal):
     if level == "Complete beginner":
-        return ("1:1 Cybersecurity Mentorship", "₹1,999",
-                "You're just starting. A dedicated mentor will build your path and keep you accountable week by week.")
+        return (
+            "1:1 Cybersecurity Mentorship",
+            "₹1,999",
+            "You're just starting. A dedicated mentor will build your path and keep you accountable week by week."
+        )
     elif level == "Some labs / CTF":
-        return ("Cybersecurity Career Ready", "₹3,999",
-                "You have skills but need job-readiness. This covers resume, LinkedIn, interviews, and portfolio.")
+        return (
+            "Cybersecurity Career Ready",
+            "₹3,999",
+            "You have skills but need job-readiness. This covers resume, LinkedIn, interviews, and portfolio."
+        )
     elif level == "Intermediate":
-        return ("8-Week Cybersecurity Career Program", "₹9,999",
-                "A complete 8-week transformation with labs, projects, and weekly mentor check-ins.")
+        return (
+            "8-Week Cybersecurity Career Program",
+            "₹9,999",
+            "A complete 8-week transformation with labs, projects, and weekly mentor check-ins."
+        )
     else:
-        return ("1:1 Cybersecurity Clarity Session", "₹999",
-                "Get clarity on your next step with a focused 1:1 session.")
+        return (
+            "1:1 Cybersecurity Clarity Session",
+            "₹999",
+            "Get clarity on your next step with a focused 1:1 session."
+        )
 
 # ---------------------------------------------------------
-# HEADER
+# HEADER (with logo)
 # ---------------------------------------------------------
-st.markdown("# 🛡️ Bugitrix Roadmap Generator")
-st.markdown("### From confused beginner to career-ready — one roadmap at a time.")
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("logo.png", use_container_width=True)
+
+st.markdown(
+    "<h1 style='text-align:center;'>Bugitrix Roadmap Generator</h1>",
+    unsafe_allow_html=True
+)
+st.markdown(
+    "<p style='text-align:center; color:#B0B0B0; font-size:1.1rem;'>"
+    "From confused beginner to career-ready — one roadmap at a time."
+    "</p>",
+    unsafe_allow_html=True
+)
 st.markdown("---")
 
 # ---------------------------------------------------------
