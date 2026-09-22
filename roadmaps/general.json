@@ -1,0 +1,33 @@
+{
+  "path_name": "General Cyber Security Foundation",
+  "description": "Not sure yet? Build a strong foundation and discover what excites you most.",
+  "phases": [
+    {
+      "title": "Phase 1: Foundations (Weeks 1–4)",
+      "items": [
+        "Networking Basics — IP, HTTP, DNS (TryHackMe: Pre-Security)",
+        "Linux Command Line — OverTheWire: Bandit (Levels 0–15)",
+        "How the Web Works — PortSwigger Web Security Academy (Intro)",
+        "Cyber Security Basics — CIA Triad, common attacks, terminology"
+      ]
+    },
+    {
+      "title": "Phase 2: Explore Paths (Weeks 5–8)",
+      "items": [
+        "Try Web Security — PortSwigger Labs (XSS, SQLi basics)",
+        "Try Networking — Wireshark packet capture on your own traffic",
+        "Try Cloud — Launch a free AWS/Azure VM and secure it",
+        "Try Scripting — Automate a small task in Python"
+      ]
+    },
+    {
+      "title": "Phase 3: Choose Your Direction (Weeks 9–12)",
+      "items": [
+        "Pick the path that felt most exciting — go deeper",
+        "Build 1 project in that path — documented on GitHub",
+        "Join a community — Discord, Reddit r/cybersecurity, local meetups",
+        "Start applying for internships or entry-level roles"
+      ]
+    }
+  ]
+}
