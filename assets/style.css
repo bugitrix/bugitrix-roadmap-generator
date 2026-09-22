@@ -1,0 +1,128 @@
+/* ---------------------------------------------------------
+   BUGITRIX ROADMAP GENERATOR — CUSTOM STYLES
+   --------------------------------------------------------- */
+
+/* Global background */
+.stApp {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Hide Streamlit default menu/footer */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Main container width + spacing */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 850px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #00E5B0 !important;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 2.4rem !important;
+}
+
+h2 {
+    font-size: 1.8rem !important;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem !important;
+    color: #FFFFFF !important;
+    margin-top: 1.5rem;
+}
+
+/* Paragraph text */
+p, label, .stMarkdown {
+    color: #D0D0D0 !important;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Selectbox styling */
+div[data-baseweb="select"] > div {
+    background-color: #151515 !important;
+    border: 1px solid #2A2A2A !important;
+    border-radius: 8px !important;
+    color: #FFFFFF !important;
+}
+
+div[data-baseweb="select"] > div:hover {
+    border-color: #00E5B0 !important;
+}
+
+/* Dropdown options */
+ul[role="listbox"] {
+    background-color: #151515 !important;
+    color: #FFFFFF !important;
+}
+
+li[role="option"] {
+    color: #FFFFFF !important;
+}
+
+li[role="option"]:hover {
+    background-color: #00E5B0 !important;
+    color: #0A0A0A !important;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #00E5B0 !important;
+    color: #0A0A0A !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 14px 24px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    width: 100% !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 0 0 rgba(0, 229, 176, 0);
+}
+
+.stButton > button:hover {
+    background-color: #00FFC2 !important;
+    box-shadow: 0 0 20px rgba(0, 229, 176, 0.6) !important;
+    transform: translateY(-1px);
+}
+
+/* Divider */
+hr {
+    border-color: #1F1F1F !important;
+    margin: 1.5rem 0 !important;
+}
+
+/* Links */
+a {
+    color: #00E5B0 !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Roadmap checklist items */
+.stMarkdown ul li {
+    color: #E0E0E0 !important;
+    margin-bottom: 6px;
+}
+
+/* Footer */
+.footer-text {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+}
