@@ -1,0 +1,33 @@
+{
+  "path_name": "Cloud Security",
+  "description": "Secure modern cloud infrastructure and become a cloud security specialist.",
+  "phases": [
+    {
+      "title": "Phase 1: Cloud & IT Foundations (Weeks 1–4)",
+      "items": [
+        "Cloud Basics — AWS/Azure/GCP free tier (pick one to start)",
+        "Linux & Networking refresher — TryHackMe: Pre-Security",
+        "Identity & Access Management (IAM) basics — AWS IAM tutorial",
+        "Build 1 project: Launch a free-tier VM and secure it"
+      ]
+    },
+    {
+      "title": "Phase 2: Cloud Security Core (Weeks 5–8)",
+      "items": [
+        "Shared Responsibility Model — AWS/Azure docs",
+        "Cloud Security Posture Management — intro to tools like Prowler",
+        "Container Basics — Docker + Kubernetes fundamentals",
+        "Build 1 project: Audit a misconfigured cloud lab environment"
+      ]
+    },
+    {
+      "title": "Phase 3: Cloud Security Career (Weeks 9–12)",
+      "items": [
+        "Study for AWS Security Specialty or Azure Security Engineer",
+        "Learn Cloud SIEM — AWS GuardDuty / Azure Sentinel",
+        "Practice cloud CTFs — CloudGoat, flaws.cloud",
+        "Build a portfolio: 2 cloud security projects + writeups"
+      ]
+    }
+  ]
+}
