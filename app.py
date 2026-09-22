@@ -13,6 +13,15 @@ st.set_page_config(
 )
 
 # ---------------------------------------------------------
+# LOAD CUSTOM CSS
+# ---------------------------------------------------------
+def load_css():
+    with open("assets/style.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+load_css()
+
+# ---------------------------------------------------------
 # CTA LINK
 # ---------------------------------------------------------
 CTA_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSdjb-zRx_FTFaupAW2Q_6FF7Y49_CSPVveS6kkWui54GV-poA/viewform"
@@ -156,7 +165,7 @@ if st.button("🚀 Generate My Roadmap", use_container_width=True):
 # ---------------------------------------------------------
 st.markdown("---")
 st.markdown(
-    "<div style='text-align:center; color:#888;'>"
+    "<div class='footer-text'>"
     "Built with 🛡️ by <b>Bugitrix</b> — Mentor-first cyber security education.<br>"
     "<a href='https://bugitrix.com' target='_blank'>bugitrix.com</a>"
     "</div>",
