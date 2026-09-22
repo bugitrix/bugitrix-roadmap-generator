@@ -1,0 +1,33 @@
+{
+  "path_name": "Networking & SOC Analyst",
+  "description": "Master networking fundamentals and step into a Security Operations Center role.",
+  "phases": [
+    {
+      "title": "Phase 1: Networking Foundations (Weeks 1–4)",
+      "items": [
+        "OSI Model & TCP/IP — TryHackMe: Pre-Security",
+        "IP Addressing & Subnetting — Professor Messer (free videos)",
+        "DNS, DHCP, HTTP, HTTPS — Understand how they work together",
+        "Build 1 project: Home lab with 2 VMs talking to each other"
+      ]
+    },
+    {
+      "title": "Phase 2: Security Fundamentals (Weeks 5–8)",
+      "items": [
+        "Firewalls, IDS/IPS basics — TryHackMe: Network Security",
+        "Wireshark — Capture and analyze your own traffic",
+        "SIEM Basics — Splunk Free or ELK Stack (pick one)",
+        "Build 1 project: Simulate a small network attack, then detect it"
+      ]
+    },
+    {
+      "title": "Phase 3: SOC Analyst Skills (Weeks 9–12)",
+      "items": [
+        "Log Analysis — Understand Windows Event Logs & Syslog",
+        "MITRE ATT&CK Framework — Learn the top 10 techniques",
+        "Incident Response Basics — TryHackMe: SOC Level 1 path",
+        "Apply for entry-level SOC / NOC roles — build a detection portfolio"
+      ]
+    }
+  ]
+}
