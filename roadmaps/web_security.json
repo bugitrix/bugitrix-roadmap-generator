@@ -1,0 +1,33 @@
+{
+  "path_name": "Web Security & Bug Bounty",
+  "description": "Learn how websites work, find vulnerabilities, and earn your first bounty.",
+  "phases": [
+    {
+      "title": "Phase 1: Foundations (Weeks 1–4)",
+      "items": [
+        "Networking Basics — IP, HTTP, DNS (TryHackMe: Pre-Security)",
+        "Linux Command Line — OverTheWire: Bandit (Levels 0–15)",
+        "How the Web Works — PortSwigger Web Security Academy (Intro)",
+        "Build 1 mini project: A simple port scanner in Python"
+      ]
+    },
+    {
+      "title": "Phase 2: Core Web Security (Weeks 5–8)",
+      "items": [
+        "OWASP Top 10 — PortSwigger Labs (SQLi, XSS, IDOR)",
+        "Burp Suite Basics — Watch 3 tutorials, then practice on labs",
+        "Learn HTTP requests & responses deeply — use browser DevTools daily",
+        "Build 1 project: A basic vulnerability report on a lab target"
+      ]
+    },
+    {
+      "title": "Phase 3: Bug Bounty Entry (Weeks 9–12)",
+      "items": [
+        "Recon Basics — subfinder, httpx, ffuf (learn one at a time)",
+        "Read 5 beginner-friendly HackerOne public reports",
+        "Pick 1 VDP program with wide scope — start testing legally",
+        "Document your findings — even duplicates teach you something"
+      ]
+    }
+  ]
+}
