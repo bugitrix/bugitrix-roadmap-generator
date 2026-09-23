@@ -1,0 +1,136 @@
+{
+  "path_name": "Networking & Network Security",
+  "tagline": "Master the wires before you master the walls.",
+  "description": "A 12-week guided path into networking fundamentals and network security. Built for beginners who want to understand how data moves — and how attackers intercept it.",
+  "duration": "12 Weeks",
+  "level": "Beginner \u2192 Intermediate",
+  "outcome": "Solid networking fundamentals, hands-on packet analysis experience, and readiness for SOC / network security roles.",
+  "phases": [
+    {
+      "title": "Phase 1 \u2014 Networking Foundations",
+      "subtitle": "Weeks 1\u20134 \u00b7 Learn how networks actually work",
+      "items": [
+        {
+          "title": "OSI & TCP/IP Models",
+          "detail": "Understand the 7 layers and how real traffic maps to them.",
+          "resource": "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/",
+          "resource_label": "Cloudflare: OSI Model",
+          "time": "5\u20136 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "IP Addressing & Subnetting",
+          "detail": "IPv4/IPv6, subnet masks, CIDR notation, and why they matter for security.",
+          "resource": "https://tryhackme.com/path/outline/presecurity",
+          "resource_label": "TryHackMe: Pre-Security",
+          "time": "6\u20138 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Core Protocols: DNS, DHCP, HTTP/S",
+          "detail": "How name resolution, address assignment, and web traffic work under the hood.",
+          "resource": "https://www.cloudflare.com/learning/dns/what-is-dns/",
+          "resource_label": "Cloudflare Learning Center",
+          "time": "5\u20136 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Build a Home Lab Network",
+          "detail": "Set up a virtual router, switch, and two hosts using GNS3 or Packet Tracer.",
+          "resource": "https://www.netacad.com/courses/packet-tracer",
+          "resource_label": "Cisco Packet Tracer",
+          "time": "4\u20136 hrs",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
+      ]
+    },
+    {
+      "title": "Phase 2 \u2014 Network Security Core",
+      "subtitle": "Weeks 5\u20138 \u00b7 Learn how attackers exploit the network layer",
+      "items": [
+        {
+          "title": "Firewalls & Network Segmentation",
+          "detail": "How firewalls filter traffic and why segmentation limits breach impact.",
+          "resource": "https://www.paloaltonetworks.com/cyberpedia/what-is-a-firewall",
+          "resource_label": "Palo Alto: Firewall Basics",
+          "time": "4\u20135 hrs",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "Packet Analysis with Wireshark",
+          "detail": "Capture and inspect live traffic to spot anomalies and plaintext leaks.",
+          "resource": "https://www.wireshark.org/docs/wsug_html_chunked/",
+          "resource_label": "Wireshark User Guide",
+          "time": "8\u201310 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "VPNs & Encrypted Tunnels",
+          "detail": "IPSec vs SSL VPNs, and why encryption in transit matters.",
+          "resource": "https://www.cloudflare.com/learning/network-layer/what-is-a-vpn/",
+          "resource_label": "Cloudflare: VPN Basics",
+          "time": "3\u20134 hrs",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Detect an Attack in a PCAP",
+          "detail": "Analyze a provided packet capture to find a simulated port scan or MITM attempt.",
+          "resource": "https://www.malware-traffic-analysis.net/",
+          "resource_label": "Malware-Traffic-Analysis.net",
+          "time": "5\u20136 hrs",
+          "difficulty": "Medium",
+          "type": "Build"
+        }
+      ]
+    },
+    {
+      "title": "Phase 3 \u2014 Network Security Career",
+      "subtitle": "Weeks 9\u201312 \u00b7 Get certified and get hired",
+      "items": [
+        {
+          "title": "Certification Prep",
+          "detail": "Study for CompTIA Network+ or CompTIA Security+.",
+          "resource": "https://www.comptia.org/certifications/network",
+          "resource_label": "CompTIA Network+",
+          "time": "20\u201330 hrs",
+          "difficulty": "Medium",
+          "type": "Learn"
+        },
+        {
+          "title": "Intrusion Detection Systems",
+          "detail": "Learn Snort or Suricata basics for detecting malicious traffic patterns.",
+          "resource": "https://suricata.io/",
+          "resource_label": "Suricata IDS",
+          "time": "6\u20138 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Practice Network CTF Rooms",
+          "detail": "Hands-on rooms focused on network enumeration and exploitation.",
+          "resource": "https://tryhackme.com/path/outline/network-security",
+          "resource_label": "TryHackMe: Network Security",
+          "time": "8\u201310 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Build a Network Security Portfolio",
+          "detail": "Two writeups \u2014 a PCAP investigation and a segmented lab network design.",
+          "resource": "https://github.com/",
+          "resource_label": "Host on GitHub",
+          "time": "Ongoing",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
+      ]
+    }
+  ]
+}

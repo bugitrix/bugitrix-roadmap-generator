@@ -1,0 +1,136 @@
+{
+  "path_name": "Web Security & Bug Bounty",
+  "tagline": "Break it to understand it. Fix it to master it.",
+  "description": "A 12-week guided path into web application security and bug bounty hunting. Built for beginners who want to find real vulnerabilities in real applications.",
+  "duration": "12 Weeks",
+  "level": "Beginner \u2192 Intermediate",
+  "outcome": "Hands-on bug hunting experience, a working methodology, and readiness for bug bounty programs or AppSec roles.",
+  "phases": [
+    {
+      "title": "Phase 1 \u2014 Web Fundamentals",
+      "subtitle": "Weeks 1\u20134 \u00b7 Understand how the web actually works",
+      "items": [
+        {
+          "title": "How the Web Works",
+          "detail": "HTTP requests/responses, cookies, sessions, and the client-server model.",
+          "resource": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview",
+          "resource_label": "MDN: HTTP Overview",
+          "time": "5\u20136 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Linux & Command Line Basics",
+          "detail": "Navigate a terminal comfortably \u2014 every tool you'll use lives here.",
+          "resource": "https://tryhackme.com/path/outline/presecurity",
+          "resource_label": "TryHackMe: Pre-Security",
+          "time": "6\u20138 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "OWASP Top 10 Overview",
+          "detail": "The ten most critical web application security risks, explained simply.",
+          "resource": "https://owasp.org/www-project-top-ten/",
+          "resource_label": "OWASP Top 10",
+          "time": "4\u20135 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Set Up Your Testing Lab",
+          "detail": "Install Burp Suite and run DVWA or Juice Shop locally.",
+          "resource": "https://owasp.org/www-project-juice-shop/",
+          "resource_label": "OWASP Juice Shop",
+          "time": "3\u20134 hrs",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
+      ]
+    },
+    {
+      "title": "Phase 2 \u2014 Core Vulnerabilities",
+      "subtitle": "Weeks 5\u20138 \u00b7 Learn to find and exploit real bugs",
+      "items": [
+        {
+          "title": "SQL Injection",
+          "detail": "Manipulate database queries through unsanitized input.",
+          "resource": "https://portswigger.net/web-security/sql-injection",
+          "resource_label": "PortSwigger: SQL Injection",
+          "time": "8\u201310 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Cross-Site Scripting (XSS)",
+          "detail": "Inject scripts that run in another user's browser \u2014 stored, reflected, DOM-based.",
+          "resource": "https://portswigger.net/web-security/cross-site-scripting",
+          "resource_label": "PortSwigger: XSS",
+          "time": "8\u201310 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Authentication & Access Control Flaws",
+          "detail": "Broken login flows, IDOR, and privilege escalation between users.",
+          "resource": "https://portswigger.net/web-security/access-control",
+          "resource_label": "PortSwigger: Access Control",
+          "time": "6\u20138 hrs",
+          "difficulty": "Medium",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Full PortSwigger Labs Sprint",
+          "detail": "Clear 10 labs across SQLi, XSS, and access control categories.",
+          "resource": "https://portswigger.net/web-security/all-labs",
+          "resource_label": "PortSwigger Academy Labs",
+          "time": "10\u201312 hrs",
+          "difficulty": "Medium",
+          "type": "Build"
+        }
+      ]
+    },
+    {
+      "title": "Phase 3 \u2014 Bug Bounty Career",
+      "subtitle": "Weeks 9\u201312 \u00b7 Start hunting for real",
+      "items": [
+        {
+          "title": "Recon & Enumeration",
+          "detail": "Subdomain enumeration, tech stack fingerprinting, and attack surface mapping.",
+          "resource": "https://github.com/OWASP/Amass",
+          "resource_label": "OWASP Amass",
+          "time": "6\u20138 hrs",
+          "difficulty": "Medium",
+          "type": "Learn"
+        },
+        {
+          "title": "Reporting Like a Professional",
+          "detail": "Write clear, reproducible vulnerability reports that get accepted, not closed.",
+          "resource": "https://www.bugcrowd.com/resources/levelup/",
+          "resource_label": "Bugcrowd: Report Writing",
+          "time": "3\u20134 hrs",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "Join Your First Bug Bounty Programs",
+          "detail": "Start on beginner-friendly public programs with active triage teams.",
+          "resource": "https://hackerone.com/directory/programs",
+          "resource_label": "HackerOne Directory",
+          "time": "Ongoing",
+          "difficulty": "Hard",
+          "type": "Practice"
+        },
+        {
+          "title": "Build a Public Writeup Portfolio",
+          "detail": "Publish 2\u20133 disclosed or lab-based writeups to show your methodology.",
+          "resource": "https://github.com/",
+          "resource_label": "Host on GitHub",
+          "time": "Ongoing",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
+      ]
+    }
+  ]
+}

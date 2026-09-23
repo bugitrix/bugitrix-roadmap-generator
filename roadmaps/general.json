@@ -1,0 +1,136 @@
+{
+  "path_name": "General Cybersecurity Foundations",
+  "tagline": "Not sure where you fit yet? Start here \u2014 and find out.",
+  "description": "A 12-week exploratory path through the core areas of cybersecurity \u2014 web, network, and cloud \u2014 designed to help you discover which specialization excites you most before you commit.",
+  "duration": "12 Weeks",
+  "level": "Complete Beginner",
+  "outcome": "A working foundation across all major security domains, plus clarity on which specialization to pursue next.",
+  "phases": [
+    {
+      "title": "Phase 1 \u2014 Security Fundamentals",
+      "subtitle": "Weeks 1\u20134 \u00b7 Build the base every specialization needs",
+      "items": [
+        {
+          "title": "What is Cybersecurity, Really?",
+          "detail": "CIA triad, threat actors, and the different career paths inside security.",
+          "resource": "https://tryhackme.com/path/outline/presecurity",
+          "resource_label": "TryHackMe: Pre-Security",
+          "time": "4\u20135 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Linux & Command Line Basics",
+          "detail": "Every security tool assumes you're comfortable in a terminal \u2014 get there first.",
+          "resource": "https://overthewire.org/wargames/bandit/",
+          "resource_label": "OverTheWire: Bandit",
+          "time": "6\u20138 hrs",
+          "difficulty": "Beginner",
+          "type": "Practice"
+        },
+        {
+          "title": "Networking Basics",
+          "detail": "IP addresses, ports, and how devices actually talk to each other.",
+          "resource": "https://www.cloudflare.com/learning/network-layer/what-is-a-computer-network/",
+          "resource_label": "Cloudflare Learning Center",
+          "time": "5\u20136 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Set Up a Home Security Lab",
+          "detail": "Install a Linux VM and a vulnerable practice target like Metasploitable.",
+          "resource": "https://sourceforge.net/projects/metasploitable/",
+          "resource_label": "Metasploitable 2",
+          "time": "3\u20134 hrs",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
+      ]
+    },
+    {
+      "title": "Phase 2 \u2014 Sample Every Domain",
+      "subtitle": "Weeks 5\u20138 \u00b7 Taste web, network, and cloud security",
+      "items": [
+        {
+          "title": "Intro to Web Security",
+          "detail": "OWASP Top 10 basics and your first XSS/SQLi lab.",
+          "resource": "https://owasp.org/www-project-top-ten/",
+          "resource_label": "OWASP Top 10",
+          "time": "6\u20138 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Intro to Network Security",
+          "detail": "Capture your first packets with Wireshark and spot a plaintext password.",
+          "resource": "https://www.wireshark.org/docs/wsug_html_chunked/",
+          "resource_label": "Wireshark User Guide",
+          "time": "5\u20136 hrs",
+          "difficulty": "Beginner",
+          "type": "Practice"
+        },
+        {
+          "title": "Intro to Cloud Security",
+          "detail": "Spin up a free-tier AWS account and explore IAM basics.",
+          "resource": "https://aws.amazon.com/free/",
+          "resource_label": "AWS Free Tier",
+          "time": "4\u20135 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Try a CTF for Beginners",
+          "detail": "Complete a beginner-friendly capture-the-flag event end to end.",
+          "resource": "https://picoctf.org/",
+          "resource_label": "picoCTF",
+          "time": "6\u201310 hrs",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
+      ]
+    },
+    {
+      "title": "Phase 3 \u2014 Choose Your Direction",
+      "subtitle": "Weeks 9\u201312 \u00b7 Pick a specialization and go deeper",
+      "items": [
+        {
+          "title": "Reflect & Decide",
+          "detail": "Which domain felt most engaging? That's usually the right signal.",
+          "resource": "https://bugitrix.com",
+          "resource_label": "Talk to a Bugitrix Mentor",
+          "time": "1\u20132 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Security+ Fundamentals",
+          "detail": "A vendor-neutral cert that strengthens whichever path you choose next.",
+          "resource": "https://www.comptia.org/certifications/security",
+          "resource_label": "CompTIA Security+",
+          "time": "20\u201325 hrs",
+          "difficulty": "Medium",
+          "type": "Learn"
+        },
+        {
+          "title": "Join a Security Community",
+          "detail": "Discord servers, local meetups, or CTF teams to keep momentum and get feedback.",
+          "resource": "https://tryhackme.com/",
+          "resource_label": "TryHackMe Community",
+          "time": "Ongoing",
+          "difficulty": "Easy",
+          "type": "Practice"
+        },
+        {
+          "title": "Start Your Specialization Roadmap",
+          "detail": "Come back to Bugitrix and generate a focused roadmap for your chosen path.",
+          "resource": "https://bugitrix.com",
+          "resource_label": "Bugitrix Roadmap Generator",
+          "time": "Ongoing",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
+      ]
+    }
+  ]
+}
