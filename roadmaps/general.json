@@ -1,32 +1,135 @@
 {
   "path_name": "General Cyber Security Foundation",
-  "description": "Not sure yet? Build a strong foundation and discover what excites you most.",
+  "tagline": "Start here. Discover your path.",
+  "description": "Not sure yet? This 12-week foundation builds the core skills every cyber security professional needs — then helps you choose the direction that excites you most.",
+  "duration": "12 Weeks",
+  "level": "Beginner",
+  "outcome": "A strong foundation, one completed project, and a clear direction forward.",
   "phases": [
     {
-      "title": "Phase 1: Foundations (Weeks 1–4)",
+      "title": "Phase 1 — Core Foundations",
+      "subtitle": "Weeks 1–4 · Build the base every path shares",
       "items": [
-        "Networking Basics — IP, HTTP, DNS (TryHackMe: Pre-Security)",
-        "Linux Command Line — OverTheWire: Bandit (Levels 0–15)",
-        "How the Web Works — PortSwigger Web Security Academy (Intro)",
-        "Cyber Security Basics — CIA Triad, common attacks, terminology"
+        {
+          "title": "Networking Basics",
+          "detail": "IP, HTTP, DNS — how the internet actually works under the hood.",
+          "resource": "https://tryhackme.com/path/outline/presecurity",
+          "resource_label": "TryHackMe: Pre-Security",
+          "time": "6–8 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Linux Command Line",
+          "detail": "Navigate, edit, and run tools from the terminal with confidence.",
+          "resource": "https://overthewire.org/wargames/bandit/",
+          "resource_label": "OverTheWire: Bandit",
+          "time": "8–10 hrs",
+          "difficulty": "Beginner",
+          "type": "Practice"
+        },
+        {
+          "title": "How the Web Works",
+          "detail": "Requests, responses, cookies — the language of web security.",
+          "resource": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+          "resource_label": "MDN HTTP Guide",
+          "time": "5–6 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Cyber Security Fundamentals",
+          "detail": "CIA Triad, common attacks, and the vocabulary every pro uses.",
+          "resource": "https://tryhackme.com/path/outline/introtocyber",
+          "resource_label": "TryHackMe: Intro to Cyber",
+          "time": "6–8 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        }
       ]
     },
     {
-      "title": "Phase 2: Explore Paths (Weeks 5–8)",
+      "title": "Phase 2 — Explore the Paths",
+      "subtitle": "Weeks 5–8 · Try each direction before committing",
       "items": [
-        "Try Web Security — PortSwigger Labs (XSS, SQLi basics)",
-        "Try Networking — Wireshark packet capture on your own traffic",
-        "Try Cloud — Launch a free AWS/Azure VM and secure it",
-        "Try Scripting — Automate a small task in Python"
+        {
+          "title": "Try Web Security",
+          "detail": "Solve 3 beginner PortSwigger labs — XSS, SQLi, and IDOR.",
+          "resource": "https://portswigger.net/web-security/all-labs",
+          "resource_label": "PortSwigger Labs",
+          "time": "6–8 hrs",
+          "difficulty": "Easy",
+          "type": "Practice"
+        },
+        {
+          "title": "Try Networking",
+          "detail": "Capture your own traffic in Wireshark and analyze what you see.",
+          "resource": "https://www.wireshark.org/",
+          "resource_label": "Wireshark (Free)",
+          "time": "4–5 hrs",
+          "difficulty": "Easy",
+          "type": "Practice"
+        },
+        {
+          "title": "Try Cloud",
+          "detail": "Launch a free AWS/Azure VM and secure it with best practices.",
+          "resource": "https://aws.amazon.com/free/",
+          "resource_label": "AWS Free Tier",
+          "time": "4–6 hrs",
+          "difficulty": "Easy",
+          "type": "Practice"
+        },
+        {
+          "title": "Try Scripting",
+          "detail": "Automate a small task in Python — a port scan, log parser, or file organizer.",
+          "resource": "https://automatetheboringstuff.com/",
+          "resource_label": "Automate the Boring Stuff",
+          "time": "6–8 hrs",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
       ]
     },
     {
-      "title": "Phase 3: Choose Your Direction (Weeks 9–12)",
+      "title": "Phase 3 — Choose Your Direction",
+      "subtitle": "Weeks 9–12 · Go deep on what excites you most",
       "items": [
-        "Pick the path that felt most exciting — go deeper",
-        "Build 1 project in that path — documented on GitHub",
-        "Join a community — Discord, Reddit r/cybersecurity, local meetups",
-        "Start applying for internships or entry-level roles"
+        {
+          "title": "Pick Your Path",
+          "detail": "Web, Networking, or Cloud — choose the one that felt most fun.",
+          "resource": "https://bugitrix.com",
+          "resource_label": "Bugitrix Roadmaps",
+          "time": "1 hr",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "Build One Real Project",
+          "detail": "Document it on GitHub with a clear README and screenshots.",
+          "resource": "https://github.com/",
+          "resource_label": "GitHub",
+          "time": "10–15 hrs",
+          "difficulty": "Medium",
+          "type": "Build"
+        },
+        {
+          "title": "Join a Community",
+          "detail": "Discord, Reddit r/cybersecurity, or local meetups — don't learn alone.",
+          "resource": "https://www.reddit.com/r/cybersecurity/",
+          "resource_label": "r/cybersecurity",
+          "time": "Ongoing",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "Start Applying",
+          "detail": "Internships, entry-level roles, or freelance gigs — get real reps.",
+          "resource": "https://www.linkedin.com/jobs/",
+          "resource_label": "LinkedIn Jobs",
+          "time": "Ongoing",
+          "difficulty": "Medium",
+          "type": "Build"
+        }
       ]
     }
   ]
