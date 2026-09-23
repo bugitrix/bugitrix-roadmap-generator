@@ -1,32 +1,135 @@
 {
   "path_name": "Networking & SOC Analyst",
-  "description": "Master networking fundamentals and step into a Security Operations Center role.",
+  "tagline": "Master the networks. Defend the operations.",
+  "description": "A 12-week guided path into networking fundamentals and Security Operations Center work. Built for beginners who want to detect, analyze, and respond to real threats.",
+  "duration": "12 Weeks",
+  "level": "Beginner → Intermediate",
+  "outcome": "A detection portfolio, SIEM experience, and readiness for entry-level SOC roles.",
   "phases": [
     {
-      "title": "Phase 1: Networking Foundations (Weeks 1–4)",
+      "title": "Phase 1 — Networking Foundations",
+      "subtitle": "Weeks 1–4 · Understand how networks actually work",
       "items": [
-        "OSI Model & TCP/IP — TryHackMe: Pre-Security",
-        "IP Addressing & Subnetting — Professor Messer (free videos)",
-        "DNS, DHCP, HTTP, HTTPS — Understand how they work together",
-        "Build 1 project: Home lab with 2 VMs talking to each other"
+        {
+          "title": "OSI Model & TCP/IP",
+          "detail": "The 7 layers explained clearly — the backbone of all networking.",
+          "resource": "https://tryhackme.com/path/outline/presecurity",
+          "resource_label": "TryHackMe: Pre-Security",
+          "time": "5–6 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "IP Addressing & Subnetting",
+          "detail": "Learn how devices find each other — including CIDR and subnet masks.",
+          "resource": "https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/",
+          "resource_label": "Professor Messer (Free)",
+          "time": "8–10 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "DNS, DHCP, HTTP, HTTPS",
+          "detail": "How names resolve, addresses assign, and data moves securely.",
+          "resource": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+          "resource_label": "MDN Web Docs",
+          "time": "4–5 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Home Lab",
+          "detail": "Set up two VMs that can ping and talk to each other on a private network.",
+          "resource": "https://www.virtualbox.org/",
+          "resource_label": "VirtualBox (Free)",
+          "time": "4–6 hrs",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
       ]
     },
     {
-      "title": "Phase 2: Security Fundamentals (Weeks 5–8)",
+      "title": "Phase 2 — Security Fundamentals",
+      "subtitle": "Weeks 5–8 · Learn how attacks happen and how to spot them",
       "items": [
-        "Firewalls, IDS/IPS basics — TryHackMe: Network Security",
-        "Wireshark — Capture and analyze your own traffic",
-        "SIEM Basics — Splunk Free or ELK Stack (pick one)",
-        "Build 1 project: Simulate a small network attack, then detect it"
+        {
+          "title": "Firewalls, IDS & IPS",
+          "detail": "How traffic is filtered and how intrusions are detected in real time.",
+          "resource": "https://tryhackme.com/room/introtonetworking",
+          "resource_label": "TryHackMe: Network Security",
+          "time": "6–8 hrs",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "Wireshark Packet Analysis",
+          "detail": "Capture and inspect your own traffic to understand what normal looks like.",
+          "resource": "https://www.wireshark.org/",
+          "resource_label": "Wireshark (Free)",
+          "time": "6–8 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "SIEM Basics",
+          "detail": "Pick Splunk Free or ELK Stack — learn to search and correlate logs.",
+          "resource": "https://www.splunk.com/en_us/download/splunk-enterprise.html",
+          "resource_label": "Splunk Free",
+          "time": "8–10 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Mini Project: Attack & Detect",
+          "detail": "Simulate a small network attack in your lab, then detect it using logs.",
+          "resource": "https://attack.mitre.org/",
+          "resource_label": "MITRE ATT&CK",
+          "time": "5–6 hrs",
+          "difficulty": "Medium",
+          "type": "Build"
+        }
       ]
     },
     {
-      "title": "Phase 3: SOC Analyst Skills (Weeks 9–12)",
+      "title": "Phase 3 — SOC Analyst Skills",
+      "subtitle": "Weeks 9–12 · Think like a defender",
       "items": [
-        "Log Analysis — Understand Windows Event Logs & Syslog",
-        "MITRE ATT&CK Framework — Learn the top 10 techniques",
-        "Incident Response Basics — TryHackMe: SOC Level 1 path",
-        "Apply for entry-level SOC / NOC roles — build a detection portfolio"
+        {
+          "title": "Log Analysis",
+          "detail": "Understand Windows Event Logs and Syslog — the language of SOC work.",
+          "resource": "https://tryhackme.com/room/windowsfundamentals1xbx",
+          "resource_label": "TryHackMe: Windows Logs",
+          "time": "6–8 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "MITRE ATT&CK Framework",
+          "detail": "Learn the top 10 techniques attackers use — and how to detect each.",
+          "resource": "https://attack.mitre.org/",
+          "resource_label": "MITRE ATT&CK",
+          "time": "4–5 hrs",
+          "difficulty": "Medium",
+          "type": "Learn"
+        },
+        {
+          "title": "Incident Response Basics",
+          "detail": "Follow a real SOC workflow: detect → triage → respond → report.",
+          "resource": "https://tryhackme.com/path/outline/soclevel1",
+          "resource_label": "TryHackMe: SOC Level 1",
+          "time": "10–12 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Apply for Entry-Level Roles",
+          "detail": "Build a detection portfolio — screenshots, writeups, and dashboards.",
+          "resource": "https://github.com/",
+          "resource_label": "Host portfolio on GitHub",
+          "time": "Ongoing",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
       ]
     }
   ]
