@@ -1,32 +1,135 @@
 {
   "path_name": "Web Security & Bug Bounty",
-  "description": "Learn how websites work, find vulnerabilities, and earn your first bounty.",
+  "tagline": "Find real vulnerabilities. Earn your first bounty.",
+  "description": "A 12-week guided path from zero to your first valid bug report. Built for beginners who want practical results, not endless theory.",
+  "duration": "12 Weeks",
+  "level": "Beginner → Intermediate",
+  "outcome": "A portfolio, a methodology, and your first HackerOne report.",
   "phases": [
     {
-      "title": "Phase 1: Foundations (Weeks 1–4)",
+      "title": "Phase 1 — Foundations",
+      "subtitle": "Weeks 1–4 · Build the base every hacker needs",
       "items": [
-        "Networking Basics — IP, HTTP, DNS (TryHackMe: Pre-Security)",
-        "Linux Command Line — OverTheWire: Bandit (Levels 0–15)",
-        "How the Web Works — PortSwigger Web Security Academy (Intro)",
-        "Build 1 mini project: A simple port scanner in Python"
+        {
+          "title": "Networking Basics",
+          "detail": "Understand IP, HTTP, DNS, and how data moves across the web.",
+          "resource": "https://tryhackme.com/path/outline/presecurity",
+          "resource_label": "TryHackMe: Pre-Security",
+          "time": "6–8 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Linux Command Line",
+          "detail": "Navigate, edit files, and run tools from the terminal with confidence.",
+          "resource": "https://overthewire.org/wargames/bandit/",
+          "resource_label": "OverTheWire: Bandit",
+          "time": "8–10 hrs",
+          "difficulty": "Beginner",
+          "type": "Practice"
+        },
+        {
+          "title": "How the Web Works",
+          "detail": "Requests, responses, cookies, sessions — the language of web security.",
+          "resource": "https://portswigger.net/web-security",
+          "resource_label": "PortSwigger Academy",
+          "time": "5–6 hrs",
+          "difficulty": "Beginner",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Port Scanner",
+          "detail": "Build a simple Python script that scans open ports on a target.",
+          "resource": "https://github.com/topics/port-scanner",
+          "resource_label": "Example repos",
+          "time": "4–6 hrs",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
       ]
     },
     {
-      "title": "Phase 2: Core Web Security (Weeks 5–8)",
+      "title": "Phase 2 — Core Web Security",
+      "subtitle": "Weeks 5–8 · Learn how bugs actually work",
       "items": [
-        "OWASP Top 10 — PortSwigger Labs (SQLi, XSS, IDOR)",
-        "Burp Suite Basics — Watch 3 tutorials, then practice on labs",
-        "Learn HTTP requests & responses deeply — use browser DevTools daily",
-        "Build 1 project: A basic vulnerability report on a lab target"
+        {
+          "title": "OWASP Top 10",
+          "detail": "SQLi, XSS, IDOR, SSRF — the vulnerabilities that pay bounties.",
+          "resource": "https://portswigger.net/web-security/all-labs",
+          "resource_label": "PortSwigger Labs",
+          "time": "15–20 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Burp Suite Mastery",
+          "detail": "Intercept, modify, and replay requests like a professional tester.",
+          "resource": "https://portswigger.net/burp/documentation",
+          "resource_label": "Burp Docs",
+          "time": "6–8 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "HTTP Deep Dive",
+          "detail": "Use browser DevTools daily to inspect headers, cookies, and tokens.",
+          "resource": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+          "resource_label": "MDN HTTP Guide",
+          "time": "4–5 hrs",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "Mini Project: Vulnerability Report",
+          "detail": "Write a professional report on one lab you solved — like a real bug bounty submission.",
+          "resource": "https://docs.hackerone.com/en/articles/8475116-report-writing",
+          "resource_label": "Report Writing Guide",
+          "time": "3–4 hrs",
+          "difficulty": "Medium",
+          "type": "Build"
+        }
       ]
     },
     {
-      "title": "Phase 3: Bug Bounty Entry (Weeks 9–12)",
+      "title": "Phase 3 — Bug Bounty Entry",
+      "subtitle": "Weeks 9–12 · Hunt legally, report clearly",
       "items": [
-        "Recon Basics — subfinder, httpx, ffuf (learn one at a time)",
-        "Read 5 beginner-friendly HackerOne public reports",
-        "Pick 1 VDP program with wide scope — start testing legally",
-        "Document your findings — even duplicates teach you something"
+        {
+          "title": "Recon Fundamentals",
+          "detail": "Subdomain discovery, live host detection, and directory fuzzing.",
+          "resource": "https://github.com/projectdiscovery",
+          "resource_label": "ProjectDiscovery Tools",
+          "time": "8–10 hrs",
+          "difficulty": "Medium",
+          "type": "Practice"
+        },
+        {
+          "title": "Study Real Reports",
+          "detail": "Read 5 beginner-friendly HackerOne disclosures to learn patterns.",
+          "resource": "https://hackerone.com/hacktivity",
+          "resource_label": "HackerOne Hacktivity",
+          "time": "3–4 hrs",
+          "difficulty": "Easy",
+          "type": "Learn"
+        },
+        {
+          "title": "First Live Target",
+          "detail": "Pick one VDP with wide scope and start testing — legally and ethically.",
+          "resource": "https://hackerone.com/directory/programs",
+          "resource_label": "Bug Bounty Directory",
+          "time": "Ongoing",
+          "difficulty": "Medium",
+          "type": "Build"
+        },
+        {
+          "title": "Document Everything",
+          "detail": "Even duplicates teach you. Keep a hunting journal from day one.",
+          "resource": "https://github.com/",
+          "resource_label": "Use GitHub to log notes",
+          "time": "Ongoing",
+          "difficulty": "Easy",
+          "type": "Build"
+        }
       ]
     }
   ]
