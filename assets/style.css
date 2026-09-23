@@ -1,128 +1,343 @@
-/* ---------------------------------------------------------
+/* ===========================================================
    BUGITRIX ROADMAP GENERATOR — CUSTOM STYLES
-   --------------------------------------------------------- */
+   =========================================================== */
 
-/* Global background */
+:root {
+    --accent: #00E5B0;
+    --accent-bright: #00FFC2;
+    --bg: #0A0A0A;
+    --card-bg: #131313;
+    --card-bg-alt: #151515;
+    --border: #232323;
+    --border-soft: #1F1F1F;
+    --text: #FFFFFF;
+    --text-muted: #B0B0B0;
+    --text-dim: #888888;
+    --danger: #F87171;
+    --warning: #FBBF24;
+}
+
+/* ---------- Global ---------- */
 .stApp {
-    background-color: #0A0A0A;
-    color: #FFFFFF;
+    background: radial-gradient(circle at 20% -10%, #0f1a17 0%, var(--bg) 45%) fixed;
+    color: var(--text);
     font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
-/* Hide Streamlit default menu/footer */
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
 
-/* Main container width + spacing */
 .block-container {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     max-width: 850px;
 }
 
-/* Headings */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #2A2A2A; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ---------- Typography ---------- */
 h1, h2, h3, h4 {
-    color: #00E5B0 !important;
+    color: var(--accent) !important;
     font-weight: 700;
     letter-spacing: -0.5px;
 }
+h1 { font-size: 2.3rem !important; }
+h2 { font-size: 1.7rem !important; margin-top: 1.2rem; }
+h3 { font-size: 1.25rem !important; color: var(--text) !important; margin-top: 1rem; }
 
-h1 {
-    font-size: 2.4rem !important;
+p, label, .stMarkdown { color: var(--text-muted) !important; font-size: 1rem; line-height: 1.6; }
+
+hr { border-color: var(--border-soft) !important; margin: 1.5rem 0 !important; }
+
+a { color: var(--accent) !important; text-decoration: none; transition: color 0.2s ease; }
+a:hover { color: var(--accent-bright) !important; text-decoration: underline; }
+
+/* ---------- Sidebar ---------- */
+section[data-testid="stSidebar"] {
+    background-color: #0D0D0D !important;
+    border-right: 1px solid var(--border-soft);
 }
+section[data-testid="stSidebar"] .block-container { padding-top: 1.5rem; }
 
-h2 {
-    font-size: 1.8rem !important;
-    margin-top: 1.5rem;
-}
-
-h3 {
-    font-size: 1.3rem !important;
-    color: #FFFFFF !important;
-    margin-top: 1.5rem;
-}
-
-/* Paragraph text */
-p, label, .stMarkdown {
-    color: #D0D0D0 !important;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Selectbox styling */
-div[data-baseweb="select"] > div {
-    background-color: #151515 !important;
-    border: 1px solid #2A2A2A !important;
-    border-radius: 8px !important;
-    color: #FFFFFF !important;
-}
-
-div[data-baseweb="select"] > div:hover {
-    border-color: #00E5B0 !important;
-}
-
-/* Dropdown options */
-ul[role="listbox"] {
-    background-color: #151515 !important;
-    color: #FFFFFF !important;
-}
-
-li[role="option"] {
-    color: #FFFFFF !important;
-}
-
-li[role="option"]:hover {
-    background-color: #00E5B0 !important;
+.sidebar-cta {
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent-bright));
     color: #0A0A0A !important;
+    font-weight: 700;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 0.8rem 0 0.4rem 0;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.sidebar-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 16px rgba(0, 229, 176, 0.45);
 }
 
-/* Button styling */
+/* ---------- Pills (top badges) ---------- */
+.pill {
+    display: inline-block;
+    background-color: var(--card-bg-alt);
+    border: 1px solid var(--border);
+    color: var(--text-muted) !important;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin: 0 4px;
+}
+
+/* ---------- Selectbox ---------- */
+div[data-baseweb="select"] > div {
+    background-color: var(--card-bg-alt) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    color: var(--text) !important;
+}
+div[data-baseweb="select"] > div:hover { border-color: var(--accent) !important; }
+ul[role="listbox"] { background-color: var(--card-bg-alt) !important; color: var(--text) !important; }
+li[role="option"] { color: var(--text) !important; }
+li[role="option"]:hover { background-color: var(--accent) !important; color: #0A0A0A !important; }
+
+/* ---------- Text input ---------- */
+div[data-baseweb="input"] > div {
+    background-color: var(--card-bg-alt) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+}
+div[data-baseweb="input"] input { color: var(--text) !important; }
+
+/* ---------- Buttons ---------- */
 .stButton > button {
-    background-color: #00E5B0 !important;
+    background-color: var(--accent) !important;
     color: #0A0A0A !important;
     border: none !important;
     border-radius: 8px !important;
-    padding: 14px 24px !important;
-    font-size: 16px !important;
+    padding: 12px 22px !important;
+    font-size: 15px !important;
     font-weight: 700 !important;
     width: 100% !important;
-    transition: all 0.3s ease !important;
+    transition: all 0.25s ease !important;
     box-shadow: 0 0 0 rgba(0, 229, 176, 0);
 }
-
 .stButton > button:hover {
-    background-color: #00FFC2 !important;
-    box-shadow: 0 0 20px rgba(0, 229, 176, 0.6) !important;
+    background-color: var(--accent-bright) !important;
+    box-shadow: 0 0 18px rgba(0, 229, 176, 0.55) !important;
     transform: translateY(-1px);
 }
 
-/* Divider */
-hr {
-    border-color: #1F1F1F !important;
-    margin: 1.5rem 0 !important;
+/* Sidebar buttons (browse-mode track buttons) look secondary, not primary CTA */
+section[data-testid="stSidebar"] .stButton > button {
+    background-color: var(--card-bg-alt) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    box-shadow: none !important;
+}
+section[data-testid="stSidebar"] .stButton > button:hover {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+    background-color: #171717 !important;
+    box-shadow: none !important;
+    transform: none;
 }
 
-/* Links */
-a {
-    color: #00E5B0 !important;
-    text-decoration: none;
+/* ---------- Checkboxes ---------- */
+.stCheckbox { padding-top: 6px; }
+
+/* ---------- Progress bars (Streamlit native, sidebar) ---------- */
+div[data-testid="stProgress"] > div > div {
+    background: linear-gradient(90deg, var(--accent), var(--accent-bright)) !important;
 }
 
-a:hover {
-    text-decoration: underline;
+/* ---------- Hero card ---------- */
+.hero-card {
+    background: linear-gradient(160deg, #10201c 0%, var(--card-bg) 60%);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 14px;
+    padding: 1.6rem 1.6rem 1.3rem 1.6rem;
+    margin-top: 0.5rem;
+}
+.hero-tag {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    background: rgba(0, 229, 176, 0.1);
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+.meta-row { margin-top: 0.6rem; display: flex; flex-wrap: wrap; gap: 8px; }
+.meta-badge {
+    background-color: var(--card-bg-alt);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    padding: 5px 12px;
+    border-radius: 999px;
 }
 
-/* Roadmap checklist items */
-.stMarkdown ul li {
-    color: #E0E0E0 !important;
-    margin-bottom: 6px;
+/* ---------- Progress track (overall) ---------- */
+.progress-track {
+    width: 100%;
+    height: 10px;
+    background-color: var(--card-bg-alt);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 6px;
+    border: 1px solid var(--border);
+}
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+    border-radius: 999px;
+    transition: width 0.4s ease;
 }
 
-/* Footer */
+/* ---------- Phase header + mini progress ---------- */
+.phase-header {
+    border-top: 1px solid var(--border-soft);
+    padding-top: 1.2rem;
+    margin-top: 0.6rem;
+}
+.phase-progress-track {
+    width: 100%;
+    height: 6px;
+    background-color: var(--card-bg-alt);
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid var(--border-soft);
+}
+.phase-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2dd4bf, var(--accent));
+    border-radius: 999px;
+    transition: width 0.4s ease;
+}
+
+/* ---------- Item cards ---------- */
+.item-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 0.7rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.item-card:hover {
+    border-color: var(--accent);
+    transform: translateX(2px);
+}
+.item-title {
+    color: var(--text) !important;
+    font-weight: 700;
+    font-size: 1.02rem;
+    margin-bottom: 0.25rem;
+}
+.item-detail {
+    color: var(--text-muted) !important;
+    font-size: 0.92rem;
+    margin-bottom: 0.6rem;
+}
+.item-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 0.5rem; }
+.badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: 999px;
+    background-color: var(--card-bg-alt);
+}
+.resource-link {
+    display: inline-block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent) !important;
+}
+
+.empty-state {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 0.6rem 0 1rem 0;
+}
+
+/* ---------- CTA card (recommended service) ---------- */
+.cta-card {
+    background: linear-gradient(160deg, #1a1206 0%, var(--card-bg) 65%);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--warning);
+    border-radius: 14px;
+    padding: 1.5rem 1.6rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.cta-card .hero-tag {
+    color: var(--warning);
+    background: rgba(251, 191, 36, 0.12);
+}
+.price-tag {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-top: 0.3rem;
+}
+
+.main-cta {
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent-bright));
+    color: #0A0A0A !important;
+    font-weight: 800;
+    font-size: 1.05rem;
+    padding: 14px 20px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.main-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 24px rgba(0, 229, 176, 0.55);
+    text-decoration: none !important;
+}
+
+.secondary-cta {
+    display: block;
+    text-align: center;
+    background-color: var(--card-bg-alt);
+    border: 1px solid var(--border);
+    color: var(--text) !important;
+    font-weight: 600;
+    font-size: 0.92rem;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+.secondary-cta:hover {
+    border-color: var(--accent);
+    color: var(--accent) !important;
+    text-decoration: none !important;
+}
+
+/* ---------- Footer ---------- */
 .footer-text {
     text-align: center;
-    color: #888;
-    font-size: 0.9rem;
-    padding-top: 1rem;
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    padding-top: 0.5rem;
+    line-height: 1.7;
 }
